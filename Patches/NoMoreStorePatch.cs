@@ -12,7 +12,7 @@ namespace ShopLift.Patches
         [HarmonyPatch(typeof(PnlStage), nameof(PnlStage.Awake))]
         internal class PnlStagePatch
         {
-            private static void Postfix(PnlDlcTagControl __instance)
+            private static void Postfix()
             {
                 // Hide the store button
                 GameObject.Find("UI/Standerd/PnlStage/StageUi/Tag&Difficulty&Dlc/BtnDlc").SetActive(false);
