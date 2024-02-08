@@ -1,17 +1,11 @@
 ﻿using HarmonyLib;
 using Il2Cpp;
-using Il2CppAssets.Scripts.Database;
-using Il2CppAssets.Scripts.PeroTools.Nice.Actions;
-using Il2CppAssets.Scripts.PeroTools.Nice.Interface;
 using Il2CppAssets.Scripts.UI.Panels;
 using Il2CppAssets.Scripts.UI.Panels.PnlDLC;
-using Il2Cpprail;
-using MelonLoader;
 using UnityEngine;
 using UnityEngine.UI;
-using Object = System.Object;
 
-namespace CustomAlbums.Patches
+namespace ShopLift.Patches
 {
     internal class NoMoreStorePatch
     {
