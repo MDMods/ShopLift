@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Platforms>AnyCPU;x64</Platforms>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Directory.Build.props" />
+    <None Remove="SetPath.cmd" />
+  </ItemGroup>
+  
+  <Target Name="CopyDLLs" AfterTargets="Build">
+    <Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="$(GameFolder)\Mods" />
+    <Message Text="Copied DLL -&gt; $(GameFolder)\Mods\$(ProjectName).dll" Importance="High" />
+  </Target>
+
+  <Target Name="WarnDeprecatedPath" AfterTargets="Build" Condition="!Exists('$(MD_DIRECTORY)')">
+    <Message Text="Warning: MD_NET6_DIRECTORY is no longer in use. Please remove the environment variable and run SetPath.cmd again." Importance="High" />
+  </Target>
+</Project>
