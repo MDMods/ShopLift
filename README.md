@@ -1,6 +1,6 @@
 [![](https://dcbadge.vercel.app/api/server/mdmc)](https://discord.gg/mdmc)
  # ShopLift
-Removes the shameless store button in Muse Dash.
+Removes the shameless store button in Muse Dash.  
 NOTE: This is NOT a piracy mod — do not use this thinking that this is a piracy mod.
 ## Usage
 - Install MelonLoader into Muse Dash based on the dependency listed below
