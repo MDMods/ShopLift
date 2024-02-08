@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 using MelonLoader;
+using Main = ShopLift.Main;
 
 [assembly: AssemblyTitle("Shoplift")]
 [assembly: AssemblyDescription("")]
@@ -29,7 +30,7 @@ using MelonLoader;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: MelonInfo(typeof(ShopLift.Main), "ShopLift", "1.0.0", "Mr. Talk")]
+[assembly: AssemblyVersion("1.0.1")]
+[assembly: AssemblyFileVersion("1.0.1")]
+[assembly: MelonInfo(typeof(Main), "ShopLift", "1.0.1", "Mr. Talk")]
 [assembly: MelonGame("PeroPeroGames", "MuseDash")]

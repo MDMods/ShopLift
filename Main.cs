@@ -1,9 +1,8 @@
 ﻿using MelonLoader;
 
-namespace ShopLift
+namespace ShopLift;
+
+public class Main : MelonMod
 {
-    public class Main : MelonMod
-    {   
-        // Stub main
-    }
+    // Stub main
 }
